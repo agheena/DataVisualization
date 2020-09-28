@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization lab2 - India Disabled Population</title>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='style.css') }}">
+</head>
+
+<!-- <div style="background-image: url('static/img2.jpg'); height: 900px; width: 100%;"> -->
+
+<body style="background-image: url('static/img2.jpg'); height: 900px; width: 100%;">
+    <div style="background-image: url('static/img5.jpg'); height: autp; width: 100%;">
+        <center>
+            <h1 style="color:rgb(218, 218, 233);"><b>CSE 564 Visualization Lab 2</b></h1>
+            <h2 style="color:rgb(218, 218, 233);"><i>Data Sampling, Clustering and Dimension Reduction</i></h2>
+        </center>
+    </div>
+    <hr>
+    <div class="row">
+
+        <div class="dropdown1">
+            <select id="map1" class="box">
+            <option val="Select Task">Select Task</option>
+            <option val="Task 1">Task 1</option>
+            <option val="Task 2">Task 2</option>
+        </select>
+        </div>
+        <div class="dropdown2">
+            <select id="map2" class="box" onchange="mapSelect()">
+            <option val="Select sub-task">Select sub-task</option>
+        </select>
+        </div>
+    </div>
+
+    <div id="error"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='lab2.js')}}"></script>
+    <style src="{{ url_for('static', filename='style.css')}}"></style>
+</body>
+<!-- </div> -->
+
+</html>
